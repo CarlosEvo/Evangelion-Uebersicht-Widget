@@ -1,16 +1,16 @@
 Version = "0.X7a"
 config = {
-    Magnification: 1.0
-    BatteryAlertLevel: 20
+    Magnification: 1
+    BatteryAlertLevel: 30
     CPUAlertLevel: 90
-    Opacity: 0.5
+    Opacity: 0.70
     Voice: false
     colourIdle: "rgba(10,10,10,1)"
-    colourWarn: "rgba(256,0,0,1)"
+    colourWarn: "rgba(256,256,0,1)"
     colourDNDS: "rgba(256,96,0,1)"
-    colourWhit: "rgba(256,256,256,1)"
+    colourWhit: "rgba(256,100,100,1)"
     colourIdleHover: "rgba(128,128,128,1)"
-    colourWarnHover: "rgba(128,0,0,1)"
+    colourWarnHover: "rgba(128,128,0,1)"
 }
 ## If you do not know how to write HTML/CSS, it is best for you to learn it first before
 ## attempting to customise the UI. Or you can contact me.
