@@ -1,12 +1,12 @@
 Version = "0.X7a"
 config = {
-    Magnification: 1
+    Magnification: .80
     BatteryAlertLevel: 30
     CPUAlertLevel: 90
     Opacity: 0.70
     Voice: false
     colourIdle: "rgba(10,10,10,1)"
-    colourWarn: "rgba(256,256,0,1)"
+    colourWarn: "rgba(253,216,53,0.75)"
     colourDNDS: "rgba(256,96,0,1)"
     colourWhit: "rgba(256,100,100,1)"
     colourIdleHover: "rgba(128,128,128,1)"
@@ -39,7 +39,7 @@ refreshFrequency: 3000
 style: """
     font-size: #{config.Magnification}px
     top: -25em
-    font-family: Futura
+    font-family: Audiowide
     text-transform: uppercase
     position:relative
     opacity: #{config.Opacity}
@@ -203,7 +203,7 @@ style: """
         border-top-color:#{config.colourIdleHover}
     .output
         padding: 5em 10em
-        font-size: 30em
+        font-size: 25em
         font-weight: 100
         text-shadow: 0 0em 5em #000000
         background-color: rgba(0,0,0,0.2)
@@ -230,11 +230,11 @@ style: """
         z-index:99999
     .Bat
         font-weight: bold
-        font-size: 15em
+        font-size: 13em
         text-transform: uppercase
     .id
-        font-size:20em
-        font-family:Futura
+        font-size: 20em
+        font-family:Audiowide
         font-style:normal
     .BatStatus
         font-weight: bold
@@ -289,8 +289,8 @@ style: """
         font-size: 10em
         left: 1em; top:0.7em
         width:5em;height:4em
-        border:0.2em solid #{config.colourWhit}
-        border-right: 0.5em solid #{config.colourWhit}
+        border:0.2em solid #ffffff
+        border-right: 0.5em solid #ffffff
         z-index:99999
     .DiskN
         width: 9em; height:4em
@@ -362,13 +362,13 @@ render: -> """
 
         <div class="nav ai" target="_blank" href="#" id="51"></div>
         <div class="nav a2 NetCell" target="_blank" href="#" style="z-index:9999"><s1></s1><b></b>
-                    <div class="contentS" style="margin-left:-25em">
+                    <div class="contentS" style="margin-left:-20em">
                         <span style="font-size:15em">Ibytes/s</span>
                     </div>
-                    <div class="content"  style="margin-left:30em;margin-top:-70em;font-family:Futura;font-style:normal">
-                        <span class="NetU" style="font-size:25em">Fehler</span>
+                    <div class="content"  style="margin-left:40em;margin-top:-65em;font-family:JockeyOne-Regular;font-style:normal">
+                        <span class="NetU" style="font-size:35em">Fehler</span>
                     </div>
-                    <div class="contentS" style="position:absolute;left:55em;top:-95em;">
+                    <div class="contentS" style="position:absolute;left:45em;top:-95em;">
                         <span style="font-size:15em">Obytes/s</span>
                     </div>
         </div>
@@ -380,8 +380,8 @@ render: -> """
         <p></p>
 
         <div class="nav a1 a2 NetCell" target="_blank" href="#"><s></s><b2></b2>
-            <div class="content"  style="margin-left:30em;margin-top:-4em;font-family:Futura;font-style:normal">
-                <span class="NetD" style="font-size:25em">Fehler</span>
+            <div class="content"  style="margin-left:37em;margin-top:0em;font-family:JockeyOne-Regular;font-style:normal">
+                <span class="NetD" style="font-size:35em">Fehler</span>
             </div></div>
         <div class="nav a5" target="_blank" href="#" id="56"><s></s><b3></b3></div>
         <div class="nav a5" target="_blank" href="#" id="57" style="z-index:99999"><s2></s2><b></b>
@@ -580,8 +580,8 @@ render: -> """
                 <span class="MEMU" style="font-size:30em">Fehler</span>
             </div></div>
         <div class="nav a3" target="_blank" href="#" id="17" style="z-index:9999"><s2></s2><b></b>
-            <div class="Rotate" style="margin-top:-70em;margin-left:-60em;text-align:left"><span class="Bat"></span></div>
-            <div class="Rotate" style="margin-top:-65em;margin-left:-35em;text-align:left"><span class="BatStatus"></span></div></div><p></p>
+            <div class="Rotate" style="margin-top:-65em;margin-left:-65em;text-align:left"><span class="Bat"></span></div>
+            <div class="Rotate" style="margin-top:-55em;margin-left:-35em;text-align:left"><span class="BatStatus"></span></div></div><p></p>
         <div class="nav ai" target="_blank" href="#" id="18"></div>
 
         <div class="nav a0" target="_blank" href="#" id="19"><s></s><b></b>
